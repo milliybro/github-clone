@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+.menu {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.menu-left img {
+  width: 32px;
+  height: 32px;
+}
+.menu-left h5 {
+  color: #fff;
+}
+.menu-right img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-header {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+@media (max-width: 550px) {
+  .user-header {
+    flex-wrap: wrap;
+  }
+}
+.user-header h2 {
+  margin: 0;
+  color: #c9d1d9;
+  text-align: center;
+  font-family: Noto Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 230.769% */
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.user-header h2 span {
+  border-radius: 24px;
+  background: rgba(110, 118, 129, 0.4);
+  color: #c9d1d9;
+  text-align: center;
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 150% */
+  padding: 0px 7px;
+}
+
+.user__account {
+  display: grid;
+  grid-template-columns: 30% auto;
+}
+@media (max-width: 1000px) {
+  .user__account {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.user__account-info {
+  margin-top: 50px;
+}
+.user__account-info img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #30363d;
+  background: url(<path-to-image>), lightgray 0px 0px/100% 100% no-repeat, #0d1117;
+  box-shadow: 0px 0px 0px 1px rgba(240, 246, 252, 0.1);
+  margin-bottom: 15px;
+}
+@media (max-width: 1200px) {
+  .user__account-info img {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+  }
+}
+.user__account-info h4 {
+  color: #c9d1d9;
+  font-family: Noto Sans;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 130.435% */
+}
+.user__account-info h6 {
+  margin-top: -10px;
+  color: #8b949e;
+  font-family: Noto Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 133.333% */
+}
+.user__account-info p {
+  color: #c9d1d9;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  padding-top: 15px;
+}
+.user__account-info button {
+  border-radius: 6px;
+  border: 1px solid rgba(240, 246, 252, 0.1);
+  background: #21262d;
+  color: #c9d1d9;
+  text-align: center;
+  font-family: Noto Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  padding: 6px 113px;
+}
+.user__account-info .follow {
+  display: flex;
+  padding: 16px 0;
+}
+.user__account-info .follow svg path {
+  width: 50px;
+  height: 50px;
+}
+.user__account-info .follow h5 {
+  color: #8b949e;
+  font-family: Noto Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+}
+.user__account-info .follow h5 span {
+  color: #c9d1d9;
+  font-family: Noto Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+}
+.user__account-info .location,
+.user__account-info .blog {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.user__account-info .location h6,
+.user__account-info .blog h6 {
+  color: #c9d1d9;
+  font-family: Noto Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 161.538% */
+  margin: 0;
+}
+@media (max-width: 1000px) {
+  .user__account-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+.user__account-project .alert {
+  display: flex;
+  justify-content: space-between;
+  gap: 66px;
+  padding: 21px;
+  margin: 24px 0px;
+  border-radius: 6px;
+  border: 1px solid rgba(56, 139, 253, 0.4);
+  background: rgba(56, 139, 253, 0.15);
+  color: #c9d1d9;
+  font-family: Noto Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+}
+.user__account-project .alert span {
+  color: #58a6ff;
+  font-family: Noto Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+.user__account-project .repo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user__account-project .repo-header h4 {
+  color: #c9d1d9;
+  font-family: Noto Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}
+.user__account-project .repo-header h6 {
+  color: #8b949e;
+  font-family: Noto Sans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 163.636% */
+}
+.user__account-project p {
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.user__account-project .repos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.user__account-project .repo-row {
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  background: #0d1117;
+  padding: 17px;
+}
+.user__account-project .repo-row h5 {
+  color: #8b949e;
+  font-family: Noto Sans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 163.636% */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.user__account-project .repo-row h4 {
+  gap: 8px;
+  color: #58a6ff;
+  font-family: Noto Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px; /* 161.538% */
+}
+.user__account-project .repo-row h4 span {
+  margin-left: 20px;
+  border-radius: 23.8px;
+  border: 1px solid #30363d;
+  color: #8b949e;
+  font-family: Noto Sans;
+  font-size: 11.9px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 151.261% */
+  padding: 7px;
+}
+.user__account-project .repo-row .repo-footer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.user__account-project .repo-row .repo-footer h4 {
+  color: #8b949e;
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  display: flex;
+  align-items: center;
+}
